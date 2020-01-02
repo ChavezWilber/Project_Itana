@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Itana Web</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+     
+  
+  
+      <nav class="bg-dark">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo navbar-brand"><i class="material-icons" style="font-size: 40px">insert_chart</i>Oficina de estadísticas laborales</a>
+            <ul class="right hide-on-med-and-down">
+            <li><input type="search" id="search" placeholder="Buscar" style="color:#FFFFFF;"></li>
+            <li><a class="waves-effect waves-light btn-small" id="Bonton_buscar">Buscar</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="col md-7" id="result_busqueda">
+        <div class="card my-4" >
+            <div class="card-body">
+               <label id>
+
+               </label>
+                <ul id="container">
+
+                </ul>
+
+            </div>
+        </div>
+      </div>
+
+       <div class="contenedor">
+		<article>
+		 
+			<button id="btn-abrir-popup" class="btn-abrir-popup">Abrir Ventana Emergente</button>
+			 
+		</article>
+
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+				<h3>SUSCRIBETE</h3>
+				<h4>y recibe un cupon de descuento.</h4>
+				<form action="">
+					<div class="contenedor-inputs">
+						<input type="text" placeholder="Nombre">
+						<input type="email" placeholder="Correo">
+					</div>
+					<input type="submit" class="btn-submit" value="Suscribirse">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="popup.js"></script>
+      
+       
+    
+ 
+     
+     
+ 
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+      <script src="application.js"> </script>
+</body>
+</html>
