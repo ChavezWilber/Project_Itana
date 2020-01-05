@@ -7,14 +7,40 @@
 body {
 	background: #fff;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 50%;
 }
-
-.contenedor {
-	width: 90%;
-	max-width: 1000px;
-	margin: 20px auto;
+.boxing{
+	width: 100%;
+	height: 30%;
+	 
+	padding-left:20%;
+	 
 }
+.cambio{
+	padding-left:10%;
+	padding-top:20%;
+	font-size:120%;
 
+	/*background: rgba(94,125,227, .9);
+*/
+	 
+}
+.etiqueta {
+	font-size:150%;
+	padding-right: 35px;
+	padding-left: 35px;
+}
+.barra{
+	position: fixed;
+	top: 0%;
+} 
+
+.alan{
+	position: fixed;
+	left: 30%;
+	top: 40%;
+
+}
 .contenedor article {
 	line-height: 28px;
 }
@@ -179,3 +205,6 @@ body {
 	from { opacity: 0; }
 	to { opacity: 1; }
 }
+
+ 
+ 

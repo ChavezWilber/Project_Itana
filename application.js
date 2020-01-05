@@ -1,11 +1,13 @@
 $(document).ready(function(){
     const database_url='Itana_Database.php';
     const listar_url='itana_listar.php';
-    let mostrar_lista=false;
-
-console.log("Jquery esta funcionando");
-mostrar_busqueda();
-
+    const insertar_url='itana_crear.php';
+     
+    
+         
+console.log("Jquery funcionando");
+mostrar_busqueda(false);
+ 
 $('#search').keyup(function(e){
     if($('#search').val()){
      
@@ -49,6 +51,31 @@ $('#search').keyup(function(e){
              
             console.log( search);
         });
+     
+        $(document).on('click','#btn-cerrar-popup',function(){
+            
+         
+            $('#caja_padre').show();
+            $('#cuerpo').show();
+            $('#ID1').show();
+            $('#ID2').show();
+             
+        });
+       
+        $(document).on('click','#btn-abrir-popup',function(){
+           
+          
+            $('#caja_padre').hide();
+            $('#cuerpo').hide();
+            $('#ID1').hide();
+            $('#ID2').hide();
+
+           
+        });
+        
+        
+
+
 
 function mostrar_busqueda(valor){
     if(!valor){
@@ -58,5 +85,28 @@ function mostrar_busqueda(valor){
     }
 
 };
+
+ 
+
+$('#Insert').submit(function(e){
+    
+
+    const data={
+        anio:$('#Anio').val(),
+        name:$('#Nombre').val(),
+        force:$('#force_lab').val(),
+        employ:$('#employ').val(),
+        My_url:database_url
+    }
+    $.post(insertar_url,data,function(response){
+        console.log(response);
+       
+        
+         
+     });
+    
+    
+}); 
+
 
 });

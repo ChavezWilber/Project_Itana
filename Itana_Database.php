@@ -7,8 +7,6 @@ $connection =mysqli_connect(
     'itana'
     
 );
-if($connection){
-      //echo "BASE DE DATOS ESTA EN CONEXION";
- }
+ 
 
 ?>

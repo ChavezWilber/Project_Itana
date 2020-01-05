@@ -1,34 +1,57 @@
 <?php
              
-             $search=$_POST['search'];
+             $lista=$_POST['list'];
              $url=   $_POST['My_url'];
              include($url);
-             if(!empty($search)){
-                
-                $query="SELECT * FROM projecto_itana WHERE Area_name LIKE '$search%' ";
-                
-                $result=mysqli_query($connection,$query);
-                 
-                if(!$result){
-                    die('QUERY ERROR'.mysqli_error($connection));
-                   
-                }
-                $json=array();
-                while($row=mysqli_fetch_array($result)){
-                            $json[]=array(
-                                'FIPS'=>$row['FIPS'],
-                                'ANIO'=>$row['ANIO'],
-                                'Area_name'=>$row['Area_name'],
-                                'Civilian_labor_force'=>$row['Civilian_labor_force'],
-                                'Employed'=>$row['Employed'],
-                                'Unemployed'=>$row['Unemployed'],
-                                'Unemployment_rate'=>$row['Unemployment_rate']
+             $campo='';
+             if($lista=='Año'){
+                $query="SELECT Distinct(ANIO) FROM projecto_itana";
+                $campo='ANIO';
+             }else{
+                $query="SELECT Distinct(Area_name) FROM projecto_itana";
+                $campo='Area_name';
+             }
 
-                            );
-                };
-                $jsonString=json_encode($json);
-                echo $jsonString;
+
+             $result=mysqli_query($connection,$query);
+
+
+             if(!$result){
+                die('Error en busqueda'.mysqli_error($connection));
+               
             }
+            $json=array();
+
+
+            
+            if($campo=='ANIO'){
+                while($row=mysqli_fetch_array($result)){
+                    $json[]=array(
+                         
+                        'ANIO'=>$row['ANIO'],
+                        
+
+                    );
+               };
+            }
+            else{
+                while($row=mysqli_fetch_array($result)){
+                    $json[]=array(
+                         
+                        
+                        'Area_name'=>$row['Area_name'],
+                        
+
+                    );
+                  };
+
+            }
+           
+        $jsonString=json_encode($json);
+            echo $jsonString;
+           // echo $cadena.'</select>';
+             
+           
                
                
                 
