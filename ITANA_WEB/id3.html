@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="barra.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+    <script>
+        $(function() {
+                    $('select').formSelect();
+        });
+       
+</script>
+ <style>
+ .caja_padre{
+                    position:absolute;
+                    position: fixed;
+                    width:0;
+                    height:0;
+                    background: #133E73;
+                    right:98%;
+                    top:89%;
+                }</style>
+</head>
+<body>
+
+    <header>
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><i class="material-icons">add</i>Oficina de Estadistica</a>
+		</div>
+ 
+		<nav class="bg-dark">
+            <div class="nav-wrapper">
+                 
+                <ul class="">
+                    <li><a href="#" ><span class="">Inicio</span></a></li>
+                    <li><a href="#"><span  class=""></span>Trabajos</a></li>
+                    <li><a href="#"><span  class=""></span>Proyectos</a></li>
+                    <li><a href="#"><span  class=""></span>Servicios</a></li>
+                    <li><a href="#"><span  class=""></span>Contactos</a></li>
+                    
+                    <li>
+                         
+                            <div class="switch">
+                                <label>
+                                    Región
+                                  <input type="checkbox">
+                                  <span class="lever"></span>
+                                  Año
+                                </label>
+                              </div>
+                        
+                    </li>
+                </ul>
+           
+            </div>
+		</nav>
+    </header>
+
+    <form action="" class="boxing">
+         
+        <div class="form-row">
+            <div class="input-field center  col-xs-12 col-sm-12 col-md-6 col-lg-6"">
+                <select name="prim" id="prim" class="validate" id="Anio"  >
+                  <option value="" disabled selected>Año</option>
+                            <option value="1">hola</option>
+                            <option value="2">mundo</option>
+                </select>
+            </div>
+        </div>
+  
+    </form>
+    <div id="cuerpo">
+      <br>
+          
+
+  
+    
+    
+    <form >
+
+      <div class="form-row">
+        <div class="col  ">
+          <label for="" class="etiqueta" style="color:  rgba(97, 105, 102, 0.767); font-weight: bold;">Codigo : </label>
+          <label for="" class="etiqueta"  style="color:  rgba(54, 173, 118, 0.9);" id="codigo_dec">1001</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col  ">
+          <label for="" class="etiqueta" style="color:  rgba(97, 105, 102, 0.767); font-weight: bold;">Región : </label>
+          <label for="" class="etiqueta" style="color:  rgba(54, 173, 118, 0.9);"id="Region_desc" >Lima</label>
+        </div>
+        
+      </div>
+      <div class="form-row">
+          <div class="col center">
+            <label for="" class="etiqueta" style="color:   rgba(97, 105, 102, 0.767);"id="Region_desc" >Detalle de registros </label>
+   
+          </div>
+      </div>
+    
+  </form>
+
+    
+</div>
+<br>
+<br>
+
+
+    <table class="table table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#Nro</th>
+          <th scope="col">Año</th>
+          <th scope="col">Fuerza Laboral</th>
+          <th scope="col">Empleabilidad</th>
+          <th scope="col">Desempleabilidad</th>
+          <th scope="col">Tasa de Desempleo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+   </div>
+
+
+ <!-- Switch -->
+ 
+   
+
+
+
+
+ <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="contenedor" id="contenedor">
+      
+           
+       
+        
+        
+         <div class="fixed-action-btn">
+            <a class="btn-floating btn-large  teal" id="">
+              <i class="large material-icons">dehaze</i>
+            </a>
+            <ul>
+              <li><a class="btn-floating  teal" id="btn-abrir-popup"><i class="material-icons">add</i></a></li>
+              <li><a class="btn-floating yellow darken-1" id="edit_btn-abrir-popup"><i class="material-icons">edit</i></a></li>
+              <li><a class="btn-floating red"><i class="material-icons" id="delete_btn-abrir-popup">delete</i></a></li>
+              <li><a href="./Unemployment.xls"   class="btn-floating blue" download="Dataset.xls"><i class="material-icons">file_download</i></a></li>
+            </ul>
+        </div>
+          
+       
+        <!--PARA INGRESAR DATOS-->
+            <div class="overlay" id="overlay">
+                  <div class="popup" id="popup">
+                  <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                   <h3>Ingresar información</h3>
+                   <h4>Itana</h4>
+                      <form action="" id="Insert">
+                        <div class="contenedor-inputs">
+                          <input type="number" id="Anio" value="2007" placeholder="Año : YYYY" required >
+                          <input type="text" id="Nombre" placeholder="Nombre" required>
+                          <input type="number" id="force_lab" placeholder="Fuerza laboral" required>
+                          <input type="number" id="employ" placeholder="Empleabilidad" required>
+                          <select name="estado" id="estado1">
+                            <option value="1">sss</option>
+                            <option value="1">sss</option>
+                            <option value="1">sss</option>
+                            <option value="1">sss</option>
+                          </select>
+                          
+                        </div>
+                       
+                        <button class="btn waves-effect waves-light" type="submit">Crear
+                          <i class="material-icons right">send</i>
+                        </button>
+                      </form>
+                    </div>
+             </div>
+        <!--PARA EDITAR DATOS-->
+        <div class="overlay" id="edit_overlay">
+            <div class="popup" id="edit_popup">
+            <a href="#" id="edit_btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+             <h3>Ingresar información</h3>
+             <h4>Itana</h4>
+                <form action="" id="Edit">
+                  <div class="contenedor-inputs">
+                     
+                    <select name="jajajaj" id="estado2">
+                      <option value="11">sss</option>
+                      <option value="111">sss</option>
+                      <option value="1111">sss</option>
+                      <option value="1111">sss</option>
+                    </select>
+                    
+                  </div>
+                 
+                  <button class="btn waves-effect waves-light" type="submit">Editar
+                    <i class="material-icons right">send</i>
+                  </button>
+                </form>
+              </div>
+        </div>
+          <!--PARA Eliminar DATOS-->
+          <div class="overlay" id="delete_overlay">
+            <div class="popup" id="delete_popup">
+            <a href="#" id="delete_btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+             <h3>Ingresar información</h3>
+             <h4>Itana</h4>
+                <form action="" id="Delete">
+                  <div class="contenedor-inputs">
+                     
+                    <select name="jajajajww" id="estado3">
+                      <option value="11">sss</option>
+                      <option value="111">sss</option>
+                      <option value="1111">sss</option>
+                      <option value="1111">sss</option>
+                    </select>
+                    
+                  </div>
+                 
+                  <button class="btn waves-effect waves-light" type="submit">Editar
+                    <i class="material-icons right">send</i>
+                  </button>
+                </form>
+              </div>
+        </div>
+    </div>
+   
+    <script src="barra.js"> </script>
+    <script src="application.js"> </script>
+    <script src="popup.js"></script>
+    
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.fixed-action-btn');
+                var instance = M.FloatingActionButton.init(elems);
+            });
+    </script>
+    
+    
+</body>
+</html>
